@@ -1,9 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Hello</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--    <head>-->
+<!--        <title><h1>Hello</h1></title>-->
+<!--        <sytle>-->
+<!--            h1 {-->
+<!--            color: red;-->
+<!--            font-size: 40 px;-->
+<!--            }-->
+<!--        </sytle>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        <h1>Hello World!</h1>-->
+<!--    </body>-->
+<!--</html>-->
+
+{% extends "hello/layout.html" %}
+{% block title %}Hello{% endblock %}
+{% block body %}
+<h1>Hello World!!!!!</h1>
+{% endblock %}

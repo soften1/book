@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taks</title>
+    </head>
+    <body>
+        <ul>
+        {% for task in tasks %}
+            <li>{{task}}</li>
+        {% empty %}
+            <li>No tasks</li>
+        {% endfor %}
+        </ul>
+
+        <form>
+            <input type="text" name="task">
+            <input type = "submit" value="Add Task">
+        </form>
+    </body>
+</html>
